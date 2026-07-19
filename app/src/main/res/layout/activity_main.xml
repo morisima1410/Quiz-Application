@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:background="#9DA8E9"
+    android:layout_gravity="center"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Title -->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Quiz Question"
+            android:textSize="22sp"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:gravity="center"
+            android:paddingBottom="16dp" />
+
+        <!-- Question -->
+        <EditText
+            android:id="@+id/etQuestion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Enter Question"
+            android:textColor="@color/black"
+            android:inputType="textMultiLine"
+            android:textColorHint="#686666"
+            android:background="@android:drawable/edit_text"
+            android:padding="12dp" />
+
+        <!-- Option 1 -->
+        <EditText
+            android:id="@+id/etOp1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Option 1"
+            android:textColor="@color/black"
+            android:textColorHint="#686666"
+            android:layout_marginTop="10dp"
+            android:padding="12dp" />
+
+        <!-- Option 2 -->
+        <EditText
+            android:id="@+id/etOp2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Option 2"
+            android:textColorHint="#686666"
+            android:textColor="@color/black"
+            android:layout_marginTop="10dp"
+            android:padding="12dp" />
+
+        <!-- Option 3 -->
+        <EditText
+            android:id="@+id/etOp3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Option 3"
+            android:textColor="@color/black"
+            android:textColorHint="#686666"
+            android:layout_marginTop="10dp"
+            android:padding="12dp" />
+
+        <!-- Option 4 -->
+        <EditText
+            android:id="@+id/etOp4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Option 4"
+            android:textColor="@color/black"
+            android:textColorHint="#686666"
+            android:layout_marginTop="10dp"
+            android:padding="12dp" />
+
+        <!-- Correct Answer -->
+        <EditText
+            android:id="@+id/etAnswer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Correct Answer (Exact Option Text)"
+            android:layout_marginTop="10dp"
+            android:textColor="@color/black"
+            android:textColorHint="#686666"
+            android:padding="12dp" />
+
+        <!-- Add Button -->
+        <Button
+            android:id="@+id/btnAdd"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Add Question"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/black"
+            android:textColor="#FFFFFF"
+            android:textSize="16sp" />
+
+    </LinearLayout>
+</ScrollView>

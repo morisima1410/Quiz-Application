@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".StudentActivity"
+    android:background="#9DA8E9">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_gravity="center"
+        android:padding="16dp">
+
+        <!-- Question Number -->
+        <TextView
+            android:id="@+id/txtQno"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Question 1"
+            android:textStyle="bold"
+            android:textColor="#555"
+            android:textSize="25sp"
+            android:layout_marginBottom="6dp" />
+
+        <!-- Question -->
+        <TextView
+            android:id="@+id/txtQuestion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Question will appear here"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:textColor="#000"
+            android:padding="12dp"
+            android:background="@color/white" />
+
+        <!-- Options -->
+        <RadioGroup
+            android:id="@+id/radioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp">
+
+            <RadioButton
+                android:id="@+id/r1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Option 1"
+                android:textColor="@drawable/radio_text_color"
+                android:buttonTint="@color/radio_button_color"
+                style="@style/Widget.AppCompat.CompoundButton.RadioButton"
+                android:padding="10dp" />
+
+            <RadioButton
+                android:id="@+id/r2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Option 2"
+                android:textColor="@drawable/radio_text_color"
+                android:buttonTint="@color/radio_button_color"
+                style="@style/Widget.AppCompat.CompoundButton.RadioButton"
+                android:padding="10dp" />
+
+            <RadioButton
+                android:id="@+id/r3"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Option 3"
+                android:textColor="@drawable/radio_text_color"
+                android:buttonTint="@color/radio_button_color"
+                style="@style/Widget.AppCompat.CompoundButton.RadioButton"
+
+                android:padding="10dp" />
+
+            <RadioButton
+                android:id="@+id/r4"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Option 4"
+                android:textColor="@drawable/radio_text_color"
+                android:buttonTint="@color/radio_button_color"
+                style="@style/Widget.AppCompat.CompoundButton.RadioButton"
+                android:padding="10dp" />
+        </RadioGroup>
+
+        <!-- Next Button -->
+        <Button
+            android:id="@+id/btnNext"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Next"
+            android:textSize="16sp"
+            android:textColor="@color/black"
+            android:layout_marginTop="20dp"
+            android:backgroundTint="@color/white" />
+
+    </LinearLayout>
+</ScrollView>
